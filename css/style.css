@@ -34,8 +34,7 @@ body {
   margin: 0;
 }
 
-
-.header{
+.header {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
 }
 
@@ -99,7 +98,7 @@ body {
 }
 
 .nav-list .portfolio-active,
- .nav-list .studio-active {
+.nav-list .studio-active {
   color: var(--blu-brand-color);
 }
 
@@ -112,7 +111,7 @@ body {
   margin-left: 50px;
 }
 
-.header-contact{
+.header-contact {
   margin-left: auto;
 }
 
@@ -192,7 +191,7 @@ body {
   border: 0;
 }
 .portfolio-link button:hover,
- .portfolio-link button:focus {
+.portfolio-link button:focus {
   color: var(--white-brand-color);
   background-color: var(--blu-brand-color);
   cursor: pointer;
