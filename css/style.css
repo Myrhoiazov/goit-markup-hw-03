@@ -357,11 +357,11 @@ body {
   text-transform: uppercase;
   font-weight: 700;
   font-size: 14px;
-  line-height: 2;
-  letter-spacing: 0.06em;
+  line-height: 1.2;
+  letter-spacing: 0.03em;
   color: var(--black-brand-color);
 
-  margin-top: 0;
+  margin-bottom: 10px;
 }
 .our-work__subtitle {
   font-weight: 400;
