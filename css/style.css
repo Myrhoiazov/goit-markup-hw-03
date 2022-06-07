@@ -267,12 +267,14 @@ body {
   text-align: center;
 }
 .main-hero-title {
-  margin-top: 0;
-
   font-size: 44px;
   line-height: 1.4;
   letter-spacing: 0.06em;
   color: var(--white-brand-color);
+
+  text-transform: uppercase;
+
+  margin-bottom: 30px;
 }
 
 .main-btn {
@@ -295,7 +297,8 @@ body {
 /* Our Work */
 
 .our-work {
-  margin-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .our-work-list,
@@ -304,6 +307,10 @@ body {
   display: flex;
   justify-content: space-between;
   margin: 0;
+}
+
+.our-work-link{
+  width: 270px;
 }
 
 .our-work-link,
