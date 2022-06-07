@@ -76,13 +76,10 @@ body {
   letter-spacing: 0.03em;
 
   color: var(----black-brand-color);
-  
-  
 }
 
-.nav-logo{
+.nav-logo {
   margin-right: 90px;
-
 }
 
 .logo span {
@@ -129,10 +126,10 @@ body {
 
 .contact .contact-link {
   color: var(--grey-brand-color);
+  font-weight: 500;
   font-size: 14px;
   line-height: 1.1;
   letter-spacing: 0.02em;
-  font-weight: 400;
   font-style: normal;
   text-decoration: none;
 }
@@ -153,8 +150,6 @@ body {
   color: var(--white-brand-color);
   margin: 0;
   margin-bottom: 20px;
-
-  
 }
 
 .footer-contact .item {
@@ -181,8 +176,18 @@ body {
 /* Стилизация Portfolio Body */
 
 /* Скрытй текст в портфолио */
-.main-text {
-  visibility: hidden;
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 /* Скрытй текст в портфолио */
 
@@ -201,8 +206,6 @@ body {
 }
 
 .portfolio-link button {
-  
-
   font-weight: 500;
   color: var(--black-brand-color);
   font-size: 16px;
@@ -227,14 +230,12 @@ body {
 .portfolio-items {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
 
+  margin: -15px;
 }
 
 .portfolio-items .item {
-  margin-bottom: 30px;
-  padding-bottom: 20px;
+  margin: 15px;
 
   width: 370px;
 
@@ -244,6 +245,14 @@ body {
   transition: transform 1s ease;
 
   border: 1px solid rgba(238, 238, 238, 1);
+}
+
+/* .portfolio-items .item:nth-child(3n+1){
+  margin-left: 0;
+} */
+
+.portfolio-items .item:nth-child(3n) {
+  margin-right: 0;
 }
 
 .portfolio-items .item:nth-last-child(-n + 3) {
@@ -256,8 +265,11 @@ body {
 }
 
 .portfolio-img {
-  margin-bottom: 20px;
   display: block;
+}
+
+.portfolio-wrapper {
+  padding: 20px 24px;
 }
 
 .portfolio-title {
@@ -267,12 +279,7 @@ body {
   font-size: 18px;
 
   color: var(----black-brand-color);
-
-  margin-top: 0;
   margin-bottom: 4px;
-  margin-left: 24px;
-
-  
 }
 .portfolio-subtitle {
   font-weight: 400;
@@ -280,12 +287,6 @@ body {
   line-height: 1.8;
   letter-spacing: 0.03em;
   font-size: 16px;
-
-  margin-left: 24px;
-  margin-bottom: 0;
-  margin-top: 0;
-
-  
 }
 
 /* ------------------Главная страница сайта-------------------- */
@@ -296,6 +297,7 @@ body {
   text-align: center;
 }
 .main-hero-title {
+  font-weight: 900;
   font-size: 44px;
   line-height: 1.4;
   letter-spacing: 0.06em;
@@ -315,8 +317,6 @@ body {
 
   background-color: var(--blu-brand-color);
   color: var(--white-brand-color);
-
-  
 
   padding: 10px 32px;
   border: none;
@@ -364,11 +364,11 @@ body {
   margin-top: 0;
 }
 .our-work__subtitle {
+  font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   letter-spacing: 0.03em;
   color: var(--grey-brand-color);
-
 }
 
 /* Our progress */
@@ -417,11 +417,10 @@ body {
   /* margin-right: 30px; */
 }
 
-.team-link img{
+.team-link img {
   display: block;
 
   margin-bottom: 30px;
-
 }
 
 .team-text {
@@ -432,7 +431,7 @@ body {
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--black-brand-color);
-  
+
   margin-bottom: 10px;
 }
 .team-subtext {
