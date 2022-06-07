@@ -36,13 +36,14 @@ body {
 
 .header {
   border-bottom: 1px solid rgba(236, 236, 236, 1);
+
+  padding-top: 24px;
+  padding-bottom: 24px;
 }
 
 .container {
   max-width: 1200px;
   margin: 0 auto;
-  padding-left: 15px;
-  padding-right: 15px;
 }
 
 /* -------Стилизация Навигации------- */
@@ -54,7 +55,6 @@ body {
 }
 
 .site-nav {
-  height: 80px;
   display: flex;
   align-items: center;
   flex-wrap: wrap;
@@ -63,14 +63,23 @@ body {
 /* Logo */
 
 .logo {
+  display: inline-block;
+  font-family: 'Raleway';
+
   font-size: 26px;
   text-decoration: none;
-  color: var(----black-brand-color);
   font-weight: 700;
   line-height: 1.2;
-  font-family: 'Raleway';
   letter-spacing: 0.03em;
+
+  color: var(----black-brand-color);
+  
+  
+}
+
+.nav-logo{
   margin-right: 90px;
+
 }
 
 .logo span {
@@ -139,6 +148,10 @@ body {
 
 .footer-logo {
   color: var(--white-brand-color);
+  margin: 0;
+  margin-bottom: 20px;
+
+  
 }
 
 .footer-contact .item {
@@ -146,6 +159,10 @@ body {
   list-style: none;
   line-height: 1.8;
   font-size: 14px;
+}
+
+.footer-contact .item:last-child {
+  margin-bottom: 0;
 }
 
 .footer-contact .contact-link {
@@ -168,27 +185,33 @@ body {
 
 .main-portfolio {
   padding-bottom: 94px;
+  padding-top: 94px;
 }
 
 .portfolio-link {
-  list-style: none;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+
   margin-bottom: 50px;
   margin-top: 0;
 }
 
 .portfolio-link button {
-  margin: 0 4px;
+  
+
+  font-weight: 500;
   color: var(--black-brand-color);
   font-size: 16px;
   line-height: 1.6;
   letter-spacing: 0.03em;
+
   background: rgba(245, 244, 250, 1);
   padding: 6px 22px;
   border-radius: 4px;
   border: 0;
+
+  margin: 0 4px;
 }
 .portfolio-link button:hover,
 .portfolio-link button:focus {
@@ -203,14 +226,13 @@ body {
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
-  margin: 0;
+
 }
 
 .portfolio-items .item {
   margin-bottom: 30px;
   padding-bottom: 20px;
 
-  list-style: none;
   width: 370px;
 
   border: 1px solid rgba(238, 238, 238, 1);
@@ -218,7 +240,7 @@ body {
   transform: scale(1);
   transition: transform 1s ease;
 
-  border: 1px solid rgba(238, 238, 238, 1)
+  border: 1px solid rgba(238, 238, 238, 1);
 }
 
 .portfolio-items .item:nth-last-child(-n + 3) {
@@ -236,27 +258,31 @@ body {
 }
 
 .portfolio-title {
+  font-weight: 700;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  font-size: 18px;
+
   color: var(----black-brand-color);
 
   margin-top: 0;
   margin-bottom: 4px;
   margin-left: 24px;
 
-  font-weight: 700;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  font-size: 18px;
+  
 }
 .portfolio-subtitle {
-  margin-left: 24px;
-  margin-bottom: 0;
-  margin-top: 0;
-
   font-weight: 400;
   color: var(--grey-brand-color);
   line-height: 1.8;
   letter-spacing: 0.03em;
   font-size: 16px;
+
+  margin-left: 24px;
+  margin-bottom: 0;
+  margin-top: 0;
+
+  
 }
 
 /* ------------------Главная страница сайта-------------------- */
@@ -278,14 +304,16 @@ body {
 }
 
 .main-btn {
-  background-color: var(--blu-brand-color);
-  color: var(--white-brand-color);
-
   letter-spacing: 0.06em;
   font-weight: 700;
   font-size: 16px;
   font-family: inherit;
   line-height: 1.9;
+
+  background-color: var(--blu-brand-color);
+  color: var(--white-brand-color);
+
+  
 
   padding: 10px 32px;
   border: none;
@@ -306,10 +334,9 @@ body {
 .team-list {
   display: flex;
   justify-content: space-between;
-  margin: 0;
 }
 
-.our-work-link{
+.our-work-link {
   width: 270px;
 }
 
@@ -339,8 +366,6 @@ body {
   letter-spacing: 0.03em;
   color: var(--grey-brand-color);
 
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 /* Our progress */
@@ -365,8 +390,8 @@ body {
   font-size: 36px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+
   margin-bottom: 50px;
-  margin-top: 0;
 }
 
 /* Our Team */
@@ -389,22 +414,32 @@ body {
   /* margin-right: 30px; */
 }
 
+.team-link img{
+  display: block;
+
+  margin-bottom: 30px;
+
+}
+
 .team-text {
   text-align: center;
+
   font-weight: 500;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
   color: var(--black-brand-color);
-  margin-top: 30px;
+  
   margin-bottom: 10px;
 }
 .team-subtext {
   text-align: center;
+  
   color: var(--grey-brand-color);
   font-weight: 400;
   font-size: 16px;
   line-height: 1.2;
   letter-spacing: 0.03em;
+
   margin-bottom: 30px;
 }
