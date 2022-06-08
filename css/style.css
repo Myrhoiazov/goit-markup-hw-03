@@ -237,9 +237,10 @@ body {
 .portfolio-items .item {
   margin: 15px;
 
-  width: 370px;
+  /* width: 370px; */
 
-  border: 1px solid rgba(238, 238, 238, 1);
+  width: calc((100% - 3 * 30px) / 3);
+
   border-radius: 5px;
   transform: scale(1);
   transition: transform 1s ease;
@@ -265,6 +266,7 @@ body {
 }
 
 .portfolio-img {
+  width: 100%;
   display: block;
 }
 
