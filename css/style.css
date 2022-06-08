@@ -248,10 +248,6 @@ body {
   border: 1px solid rgba(238, 238, 238, 1);
 }
 
-/* .portfolio-items .item:nth-child(3n+1){
-  margin-left: 0;
-} */
-
 .portfolio-items .item:nth-child(3n) {
   margin-right: 0;
 }
